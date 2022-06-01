@@ -1,0 +1,71 @@
+Time complexity and space complexity
+1)time complexity: 
+* Time complexity is depends on the program logic or 
+  how many loops are written in program i.e. no of iterations
+   -for single loop : 
+    eg:	for(int i=1;i<=n;i++)
+		cout<<i;
+	so, above loop executes n times i.e. 1<=5,2<=5,3<=5,4<=5,5<=5 only 
+		i.e. n times
+	= so time complexity for single loop is : o(n)
+
+
+   -nested loop or double loop
+    eg: for(int i=1;i<=n;i++)
+	{
+	   for(int j=1;j<=n;j++)
+		{
+			cout<<j;
+		} 
+	}
+	  so, above code having nested loop it will executes n*n times i.e. n^2 times i.e.
+		for i=1 : j loop executes 5 times 1 2 3 4 5 
+		    i=2 : j loop executes 5 times 1 2 3 4 5 
+		    i=3 : j loop executes 5 times 1 2 3 4 5
+                    i=4 : j loop executes 5 times 1 2 3 4 5	
+		    i=5 : j loop executes 5 times 1 2 3 4 5   
+	 So, total number of executions are 25 times i.e.  n*n 
+
+	= so time complexity for nested loop is : o(n*n) or o(n-square)
+
+* There are 3 types of notation
+	case	              symbol 
+
+ 1. worst case : big of oh  i.e. 'O'
+ 2. best case  : omega      i.e. 'Ω' 
+ 3. avg  case  : Thita      i.e. 'θ'
+
+
+* space complexity : space complexity is depends on the number of variables which we used in program 
+			and also their datatypes calculate that it will give you space complexity of program
+		  : space complexity of program is always constant after program is done it dosen't change by
+		    number of inputs form user i.e. 'n'
+
+	eg:#include<iostream>
+	   using namespace std;
+	   int main()
+	    {
+	       int a=10;		//first variable is int a 
+	       int b=20;		//second variable is int b
+	       int sum;			//third  variable is int sum    so all are integer type.
+	    
+		sum = a+b; 
+		cout<<"sum is: "<<sum;	
+
+	    } 
+         : total are three variables a, b  & sum :  all are integer so integer having 4 bytes 
+		i.e. int a having 4 bytes	
+                     int b having 4 bytes
+		     int c having 4 bytes    : so, total is 4+4+4 is 12 bytes of memory will acquired by program
+	so, space complexity is: 12 bytes
+
+	note: it depends on compiler to compiler integer having 2 byte or 4 bytes by defaultly
+
+
+*space complexity depends on or directly related  to the number of vaeriables are used in program 
+*time complexity depends on the logic you implemented or how many loops you uesd.
+						 
+
+
+
+
